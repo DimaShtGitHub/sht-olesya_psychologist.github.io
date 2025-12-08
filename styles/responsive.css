@@ -1,0 +1,77 @@
+@media (max-width: 720px) {
+  .card {
+    padding: 22px;
+  }
+
+  .photo-wrapper img {
+    max-height: 360px;
+  }
+
+  .news-section {
+    padding: 24px;
+  }
+
+  .page {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 540px) {
+  .page {
+    padding: 24px 14px 36px;
+  }
+
+  .card {
+    gap: 20px;
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .content {
+    text-align: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: clamp(26px, 7vw, 32px);
+  }
+
+  .lede {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .socials {
+    grid-template-columns: 1fr;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .donate-button {
+    justify-content: center;
+  }
+
+  .news-section {
+    padding: 24px 20px;
+  }
+
+  .news-title {
+    font-size: clamp(22px, 6vw, 28px);
+    margin-bottom: 20px;
+  }
+
+  .news-item {
+    padding: 18px;
+  }
+
+  .news-item-title {
+    font-size: 18px;
+  }
+
+  .news-item-text {
+    font-size: 15px;
+  }
+}
+
