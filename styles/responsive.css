@@ -53,6 +53,15 @@
     justify-content: center;
   }
 
+  .dropdown-toggle {
+    justify-content: center;
+  }
+
+  .dropdown-menu {
+    left: 0;
+    right: 0;
+  }
+
   .news-section {
     padding: 24px 20px;
   }

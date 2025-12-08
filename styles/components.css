@@ -61,6 +61,77 @@
   fill: #ffffff;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dropdown-toggle .dropdown-arrow {
+  width: 16px;
+  height: 16px;
+  fill: var(--accent);
+  transition: transform 200ms ease;
+}
+
+.dropdown.active .dropdown-toggle .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: var(--panel);
+  border-radius: 14px;
+  border: 1px solid rgba(215, 154, 184, 0.25);
+  box-shadow: 0 8px 24px rgba(41, 21, 34, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 200ms ease, transform 200ms ease, visibility 200ms ease;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 160ms ease;
+  border-bottom: 1px solid rgba(215, 154, 184, 0.1);
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(248, 242, 244, 0.8);
+}
+
+.dropdown-item svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--accent);
+  flex-shrink: 0;
+}
+
 .news-section {
   max-width: 960px;
   width: 100%;
