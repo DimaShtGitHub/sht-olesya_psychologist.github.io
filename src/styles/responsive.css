@@ -82,5 +82,17 @@
   .news-item-text {
     font-size: 15px;
   }
+
+  .reviews-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-section {
+    padding: 24px;
+  }
+
+  .review-form {
+    order: 2;
+  }
 }
 

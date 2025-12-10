@@ -16,23 +16,6 @@
 </head>
 <body>
   <main class="page">
-    <div data-sheetdb-url="https://sheetdb.io/api/v1/5c5trat7uaako" >
-
-      <div style="background-color: aliceblue; border-bottom: 2px;">
-        <p>Имя:{{name}}</p>
-        <p>Комментарий: {{comment}}</p>
-      </div>
-
-    </div>
-    <form id="feedback-form">
-      <label for="name">Имя:</label>
-      <input id="name" type="text" name="name" placeholder="Введите ваше имя..."/> 
-      <label for="comment">Комментарий:</label>
-      <input id="comment" type="text" name="comment" placeholder="Введите ваш комментарий..."/>
-
-      <button type="submit">отправить</button>
-    </form>
-    
     <section class="card">
       <div class="photo-wrapper">
         <img src="./src/assets/img/photo_2024-10-28_13-48-02.jpg" alt="Фотография психолога">
@@ -76,6 +59,33 @@
             Поддержать
           </a>
         </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+      <div class="reviews-header">
+        <p class="eyebrow">Отзывы</p>
+        <h2 class="reviews-title">Что пишут клиенты</h2>
+        <p class="reviews-subtitle">Анонимно и бережно — чтобы было комфортно делиться впечатлениями.</p>
+      </div>
+
+      <div class="reviews-layout">
+        <div class="reviews-list" data-sheetdb-url="https://sheetdb.io/api/v1/5c5trat7uaako">
+          <div class="review-card">
+            <p class="review-name">{{name}}</p>
+            <p class="review-text">{{comment}}</p>
+          </div>
+        </div>
+
+        <form id="feedback-form" class="review-form">
+          <label class="review-label" for="name">Имя</label>
+          <input id="name" class="review-input" type="text" name="name" placeholder="Введите ваше имя..." required />
+
+          <label class="review-label" for="comment">Комментарий</label>
+          <textarea id="comment" class="review-textarea" name="comment" placeholder="Напишите ваш отзыв..." required></textarea>
+
+          <button class="review-submit" type="submit">Отправить отзыв</button>
+        </form>
       </div>
     </section>
 

@@ -192,3 +192,124 @@
   color: var(--muted);
 }
 
+.reviews-section {
+  max-width: 960px;
+  width: 100%;
+  background: var(--panel);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(215, 154, 184, 0.16);
+  display: grid;
+  gap: 20px;
+}
+
+.reviews-header {
+  display: grid;
+  gap: 8px;
+}
+
+.reviews-title {
+  margin: 0;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.2;
+}
+
+.reviews-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.reviews-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 14px;
+}
+
+.review-card {
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(248, 242, 244, 0.55);
+  border: 1px solid rgba(215, 154, 184, 0.14);
+  box-shadow: 0 6px 18px rgba(41, 21, 34, 0.08);
+}
+
+.review-name {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.review-text {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.review-form {
+  padding: 18px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(215, 154, 184, 0.14);
+  box-shadow: 0 6px 18px rgba(41, 21, 34, 0.06);
+  display: grid;
+  gap: 12px;
+}
+
+.review-label {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.review-input,
+.review-textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(215, 154, 184, 0.35);
+  padding: 12px 14px;
+  font: inherit;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.9);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.review-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.review-input:focus,
+.review-textarea:focus {
+  outline: none;
+  border-color: rgba(215, 154, 184, 0.7);
+  box-shadow: 0 0 0 3px rgba(215, 154, 184, 0.2);
+}
+
+.review-submit {
+  border: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent), rgba(215, 154, 184, 0.85));
+  color: #fff;
+  font-weight: 700;
+  transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+}
+
+.review-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(215, 154, 184, 0.26);
+}
+
+.review-submit:active {
+  transform: translateY(0);
+  opacity: 0.95;
+}
