@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const URL = 'https://sheetdb.io/api/v1/5c5trat7uaako';
-
   const form = document.getElementById('feedback-form');
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -26,7 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       })
     })
-      .then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((response) => {
+        response.json()
+        window.location.reload()
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+
   });
 }); 

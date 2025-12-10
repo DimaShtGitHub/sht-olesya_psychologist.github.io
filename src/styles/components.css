@@ -232,6 +232,8 @@
 .reviews-list {
   display: grid;
   gap: 14px;
+  height: 330px;
+  overflow-y: auto;
 }
 
 .review-card {
