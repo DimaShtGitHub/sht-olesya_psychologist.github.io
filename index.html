@@ -7,18 +7,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/typography.css">
-  <link rel="stylesheet" href="styles/components.css">
-  <link rel="stylesheet" href="styles/responsive.css">
-  <script src="scripts/dropdown.js" defer></script>
+  <link rel="stylesheet" href="./src/styles/base.css">
+  <link rel="stylesheet" href="./src/styles/layout.css">
+  <link rel="stylesheet" href="./src/styles/typography.css">
+  <link rel="stylesheet" href="./src/styles/components.css">
+  <link rel="stylesheet" href="./src/styles/responsive.css">
+  <script src="./src/scripts/dropdown.js" defer></script>
 </head>
 <body>
   <main class="page">
+    <div data-sheetdb-url="https://sheetdb.io/api/v1/5c5trat7uaako" >
+
+      <div style="background-color: aliceblue; border-bottom: 2px;">
+        <p>Имя:{{name}}</p>
+        <p>Комментарий: {{comment}}</p>
+      </div>
+
+    </div>
+    <form id="feedback-form">
+      <label for="name">Имя:</label>
+      <input id="name" type="text" name="name" placeholder="Введите ваше имя..."/> 
+      <label for="comment">Комментарий:</label>
+      <input id="comment" type="text" name="comment" placeholder="Введите ваш комментарий..."/>
+
+      <button type="submit">отправить</button>
+    </form>
+    
     <section class="card">
       <div class="photo-wrapper">
-        <img src="./photo_2024-10-28_13-48-02.jpg" alt="Фотография психолога">
+        <img src="./src/assets/img/photo_2024-10-28_13-48-02.jpg" alt="Фотография психолога">
       </div>
       <div class="content">
         <p class="eyebrow">Штанкевич Олеся - психолог</p>
@@ -91,6 +108,9 @@
       </div>
     </section>
   </main>
+
+  <script src="./src/scripts/api.js" defer></script>
+  <script src="https://sheetdb.io/handlebars.js"></script>
 </body>
 </html>
 
