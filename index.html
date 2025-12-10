@@ -15,8 +15,13 @@
   <script src="./src/scripts/dropdown.js" defer></script>
 </head>
 <body>
+  <nav class="top-nav" aria-label="Основная навигация">
+    <a class="nav-link" href="#about">Обо мне</a>
+    <a class="nav-link" href="#reviews">Отзывы</a>
+    <a class="nav-link" href="#news">Новости</a>
+  </nav>
   <main class="page">
-    <section class="card">
+    <section class="card" id="about">
       <div class="photo-wrapper">
         <img src="./src/assets/img/photo_2024-10-28_13-48-02.jpg" alt="Фотография психолога">
       </div>
@@ -98,7 +103,7 @@
       </div>
     </section>
 
-    <section class="news-section">
+    <section class="news-section" id="news">
       <h2 class="news-title">Новости</h2>
       <div class="news-list">
         <article class="news-item">
